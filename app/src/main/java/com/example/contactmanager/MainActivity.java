@@ -24,6 +24,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     //Data Sources
+    //Pushing changes to github repository
     private ContactDatabase contactDatabase;
     private ArrayList<Contacts> contactsArrayList= new ArrayList();
 
