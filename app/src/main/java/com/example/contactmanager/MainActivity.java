@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     // Adapter
     MyAdapter myAdapter;
 
-    //Binding
+    //Creating Binding Object from ActivityMainBinding
     private ActivityMainBinding mainBinding;
     private MainActivityClickHandlers handlers;
 
