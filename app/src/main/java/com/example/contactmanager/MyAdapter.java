@@ -51,12 +51,11 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ContactViewHolder>
         }
     }
 
-    public void setContactsArrayList(ArrayList<Contacts> contactsArrayList) {
+    public void setContacts(ArrayList<Contacts> contactsArrayList) {
         this.contactsArrayList = contactsArrayList;
         //refresh recyclerview and reflect the  changes into recycler dataset
         notifyDataSetChanged();
     }
-
     class ContactViewHolder extends RecyclerView.ViewHolder{
 
         private ContactListItemBinding itemBinding;

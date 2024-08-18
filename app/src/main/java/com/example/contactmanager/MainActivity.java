@@ -81,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
                     Log.d("DB_result",cont.getName() + cont.getEmail());
                     contactsArrayList.add(cont);
                 }
+
                 myAdapter.notifyDataSetChanged();
 
             }

@@ -18,6 +18,7 @@ public class MyRepository {
     Handler handler;
 
 
+    //Need application context for accessing database we are getting it from constructor
     public MyRepository(Application application) {
 
         ContactDatabase contactDatabase=ContactDatabase.getInstance(application);
@@ -57,6 +58,10 @@ public class MyRepository {
         });
 
     }
+
+    // We are going to use Live data for updating inside UI hence no need to use executor or handler
+    // making corresponding changes inside DAO Class which returns the Live Data
+    //
     public LiveData<List<Contacts>>  getAllContact(){
     return contactsDao.getAllContacts();
     }
